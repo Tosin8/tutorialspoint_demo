@@ -27,27 +27,38 @@ class MountainBikes extends StatelessWidget {
                     padding: const EdgeInsets.all(10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         const Text(
                           'Mountril Bikey V1',
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-                        const SizedBox(height: 5),
+                        const SizedBox(height: 10),
                         const Text('An electric yellow strip mountain bike',
-                            style: TextStyle(fontWeight: FontWeight.w400)),
+                            style: TextStyle(fontWeight: FontWeight.w500)),
                         const Text(
                           '\$3000',
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-                        const SizedBox(height: 5),
+                        const SizedBox(height: 10),
                         Container(
-                          height: 35,
-                          width: 100,
+                          height: 32,
+                          width: 120,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(5),
-                            color: const Color(0xffdb7821),
+                              borderRadius: BorderRadius.circular(5),
+                              color: const Color(0xffdb7821),
+                              boxShadow: const [
+                                BoxShadow(
+                                  color: Colors.black38,
+                                  spreadRadius: 0.5,
+                                )
+                              ]),
+                          child: const Center(
+                            child: Text(
+                              'ADD TO CART',
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
-                          
                         )
                       ],
                     ),
