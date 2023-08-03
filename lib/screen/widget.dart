@@ -220,7 +220,7 @@ class ProductBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(4.0),
       child: Card(
         child: Row(children: [
           Container(
@@ -242,22 +242,26 @@ class ProductBox extends StatelessWidget {
                     style: ProductMainText,
                   ),
                   const SizedBox(height: 10),
-                  Container(
-                    height: 32,
-                    width: 120,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(5),
-                        color: const Color(0xffdb7821),
-                        boxShadow: const [
-                          BoxShadow(
-                            color: Colors.black38,
-                            spreadRadius: 0.5,
-                          )
-                        ]),
-                    child: const Center(
-                      child: Text(
-                        'ADD TO CART',
-                        style: TextStyle(color: Colors.white),
+                  InkWell(
+                    splashColor: Colors.green,
+                    highlightColor: Colors.green,
+                    child: Container(
+                      height: 32,
+                      width: 120,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(5),
+                          color: const Color(0xffdb7821),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Colors.black38,
+                              spreadRadius: 0.5,
+                            )
+                          ]),
+                      child: const Center(
+                        child: Text(
+                          'ADD TO CART',
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ),
                     ),
                   )
