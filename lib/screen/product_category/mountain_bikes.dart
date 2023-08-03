@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tutorialspoint_demo/screen/product_category/constants.dart';
 
 class MountainBikes extends StatelessWidget {
   const MountainBikes({super.key});
@@ -48,7 +49,7 @@ class ProductBox extends StatelessWidget {
                 children: [
                   const Text(
                     'Mountril Bikey V1',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: ProductMainText
                   ),
                   const SizedBox(height: 10),
                   const Text('An electric yellow strip mountain bike',
