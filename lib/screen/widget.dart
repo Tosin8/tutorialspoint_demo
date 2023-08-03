@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tutorialspoint_demo/screen/product_category/mountain_bikes.dart';
 
 class Bikey_Drawer extends StatelessWidget {
   const Bikey_Drawer({
@@ -95,17 +96,16 @@ class Bikey_Drawer extends StatelessWidget {
           style: TextStyle(color: Colors.green),
         ),
       ),
-      const InkWell(
-        splashColor: Colors.green,
-        highlightColor: Colors.green,
-        child: ListTile(
-          leading: Icon(Icons.bike_scooter_rounded),
-          title: Text('Mountain Bike'),
-          // onTap: () {
-          //   Navigator.pop(context);
-          // },
-        ),
+
+      ListTile(
+        leading: const Icon(Icons.bike_scooter_rounded),
+        title: const Text('Mountain Bike'),
+        onTap: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const MountainBikes()));
+        },
       ),
+
       ListTile(
         leading: const Icon(Icons.bike_scooter_rounded),
         title: const Text('Folding Bike'),
@@ -143,7 +143,7 @@ class Bikey_Drawer extends StatelessWidget {
       ),
 
 // Service
-      Divider(),
+      const Divider(),
       const Padding(
         padding: EdgeInsets.all(15.0),
         child: Text(
@@ -177,7 +177,7 @@ class Bikey_Drawer extends StatelessWidget {
         },
       ),
 
-      Divider(),
+      const Divider(),
       ListTile(
         leading: const Icon(Icons.logout),
         title: const Text('LogOut'),
