@@ -306,9 +306,9 @@ class _RatingBoxState extends State<RatingBox> {
     double _size = 20;
     print(_rating);
     return Row(
-      mainAxisAlignment: MainAxisAlignment.end,
-      crossAxisAlignment: CrossAxisAlignment.end,
-      mainAxisSize: MainAxisSize.max,
+      // mainAxisAlignment: MainAxisAlignment.end,
+      // crossAxisAlignment: CrossAxisAlignment.end,
+      mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         Container(
           padding: const EdgeInsets.all(0),
