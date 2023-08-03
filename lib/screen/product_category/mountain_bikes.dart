@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tutorialspoint_demo/screen/product_category/constants.dart';
 
 import '../widget.dart';
 
