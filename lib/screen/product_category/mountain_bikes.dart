@@ -14,7 +14,14 @@ class MountainBikes extends StatelessWidget {
             style: TextStyle(color: Colors.white),
           )),
       body: ListView(
-        children: [ProductBox()],
+        children: [
+          ProductBox(
+            name: 'Mountril Bikey V',
+            image: '1.png',
+            description: 'An electric yellow strip mountain bike',
+            price: $3000,
+          )
+        ],
       ),
     );
   }
@@ -22,13 +29,17 @@ class MountainBikes extends StatelessWidget {
 
 class ProductBox extends StatelessWidget {
   const ProductBox({
-    super.key, required this.name, required this.description, required this.image, required this.price,
+    super.key,
+    required this.name,
+    required this.description,
+    required this.image,
+    required this.price,
   });
 
   final String name;
   final String description;
-  final String image; 
-  final int price; 
+  final String image;
+  final int price;
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +50,7 @@ class ProductBox extends StatelessWidget {
           Container(
               width: 150,
               height: 150,
-              child: Image.asset('assets/images/'$image)),
+              child: Image.asset('assets/images/$image')),
           Expanded(
             child: Container(
               padding: const EdgeInsets.all(10),
@@ -47,16 +58,12 @@ class ProductBox extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
-                    'Mountril Bikey V1',
-                    style: ProductMainText
-                  ),
+                  Text(name, style: ProductMainText),
                   const SizedBox(height: 10),
-                  const Text('An electric yellow strip mountain bike',
-                      style: TextStyle(fontWeight: FontWeight.w500)),
-                  const Text(
-                    '\$3000',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                  Text(description, style: ProductSubText),
+                  Text(
+                    price.toString(),
+                    style: ProductMainText,
                   ),
                   const SizedBox(height: 10),
                   Container(
