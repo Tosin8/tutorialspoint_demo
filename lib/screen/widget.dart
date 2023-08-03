@@ -35,15 +35,23 @@ class Bikey_Drawer extends StatelessWidget {
         title: Text('Live Chat'),
       ),
       const Divider(),
-      const Text('My Bikey Account'),
-      ListTile(
-        leading: const Icon(Icons.person),
-        subtitle: const Text('person'),
-        title: const Text('My Profile '),
-        trailing: const Icon(Icons.arrow_circle_right),
-        onTap: () {
-          Navigator.pop(context);
-        },
+      const Padding(
+        padding: EdgeInsets.all(15.0),
+        child: Text(
+          'My Bikey Account',
+          style: TextStyle(color: Colors.green),
+        ),
+      ),
+      const InkWell(
+        splashColor: Colors.green,
+        highlightColor: Colors.green,
+        child: ListTile(
+          leading: Icon(Icons.code_off_rounded),
+          title: Text('Orders'),
+          // onTap: () {
+          //   Navigator.pop(context);
+          // },
+        ),
       ),
       ListTile(
         leading: const Icon(Icons.book),
