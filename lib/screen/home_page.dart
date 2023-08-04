@@ -37,11 +37,11 @@ class HomePage extends StatelessWidget {
         body: ListView(
           children: [
             Container(
-              height: 30,
+              height: 40,
               width: 100,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
-              ),
+                  borderRadius: BorderRadius.circular(30),
+                  border: Border.all(width: 1, color: Colors.black)),
               child: Row(
                 children: [
                   const Icon(Icons.search),
