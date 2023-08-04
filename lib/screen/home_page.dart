@@ -34,20 +34,29 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
-        body: ListView(
+        body: Column(
           children: [
-            Container(
-              height: 40,
-              width: 100,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
-                  border: Border.all(width: 1, color: Colors.black)),
-              child: Row(
-                children: [
-                  const Icon(Icons.search),
-                  Text('Search your products'),
-                ],
+            Padding(
+              padding: const EdgeInsets.only(left: 10),
+              child: Container(
+                height: 40,
+                width: 70,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    border: Border.all(width: 1, color: Colors.black)),
+                child: const Row(
+                  children: [
+                    SizedBox(width: 10),
+                    Icon(Icons.search),
+                    Text('Search your products'),
+                  ],
+                ),
               ),
+            ),
+            ListView(
+              children: [
+                const SizedBox(height: 10),
+              ],
             )
           ],
         ),
