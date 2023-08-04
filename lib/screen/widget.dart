@@ -182,7 +182,7 @@ class Bikey_Drawer extends StatelessWidget {
       const Divider(),
       ListTile(
         leading: const Icon(Icons.logout),
-        title: const Text('LogOut'),
+        title: const Text('Log Out'),
         onTap: () {
           Navigator.pop(context);
         },
