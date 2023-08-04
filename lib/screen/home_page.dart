@@ -34,7 +34,23 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
-        body: ListView(),
+        body: ListView(
+          children: [
+            Container(
+              height: 30,
+              width: 100,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+              ),
+              child: Row(
+                children: [
+                  const Icon(Icons.search),
+                  Text('Search your products'),
+                ],
+              ),
+            )
+          ],
+        ),
         drawer: const Bikey_Drawer());
   }
 }
