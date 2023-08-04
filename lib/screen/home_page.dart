@@ -34,12 +34,7 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
-        body: Container(
-          decoration: const BoxDecoration(
-            color: Colors.white,
-          ),
-          child: const Center(child: Text('Hello World')),
-        ),
+        body: ListView(),
         drawer: const Bikey_Drawer());
   }
 }
