@@ -37,11 +37,19 @@ class HomePage extends StatelessWidget {
         body: Column(
           children: [
             const SizedBox(height: 10),
+            Text(
+              'Find your',
+              style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'Bike',
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+            ),
             Padding(
               padding: const EdgeInsets.only(left: 10),
               child: Container(
                 height: 40,
-                width: 70,
+                //width: 40,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
                     border: Border.all(width: 1, color: Colors.black)),
