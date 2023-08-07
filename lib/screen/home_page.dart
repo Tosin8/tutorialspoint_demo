@@ -35,11 +35,16 @@ class HomePage extends StatelessWidget {
           ],
         ),
         body: Column(
+          // mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 10),
             Text(
               'Find your',
-              style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: 23,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black.withOpacity(0.8)),
             ),
             Text(
               'Bike',
@@ -52,7 +57,8 @@ class HomePage extends StatelessWidget {
                 //width: 40,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
-                    border: Border.all(width: 1, color: Colors.black)),
+                    border: Border.all(width: 1, color: Colors.black),
+                    color: Colors.white60),
                 child: const Row(
                   children: [
                     SizedBox(width: 10),
@@ -62,6 +68,23 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 10),
+            Card(
+                child: SizedBox(
+              width: 200,
+              height: 200,
+              child: Column(
+                children: [
+                  Image.asset('assets/images/5.png'),
+                  Text(
+                    'Bikey Cloud',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                  Text('Mountain Bikes', style: TextStyle(fontSize: 15)),
+                  Text('3000')
+                ],
+              ),
+            )),
           ],
         ),
         drawer: const Bikey_Drawer());
