@@ -36,6 +36,7 @@ class HomePage extends StatelessWidget {
         ),
         body: Column(
           children: [
+            const SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.only(left: 10),
               child: Container(
@@ -53,11 +54,6 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            ListView(
-              children: [
-                const SizedBox(height: 10),
-              ],
-            )
           ],
         ),
         drawer: const Bikey_Drawer());
