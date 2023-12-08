@@ -41,34 +41,34 @@ class _HomePageState extends State<HomePage> {
         ),
         body: ListView(
           shrinkWrap: true,
-          padding: EdgeInsets.fromLTRB(2, 10, 2, 10),
-          children: [
+          padding: const EdgeInsets.fromLTRB(2, 10, 2, 10),
+          children: const [
             ProductBox(
               name: 'Mountril Bikey V',
               image: '1.png',
               description: 'An electric yellow strip mountain bike',
               price: 3000,
             ),
-            ProductBox(
+            const ProductBox(
               name: 'Mountril Bikey V2',
               image: '2.png',
               description: 'An electric purple strip mountain bike',
               price: 2500,
             ),
-            ProductBox(
+            const ProductBox(
               name: 'Mountril Bikey V3',
               image: '3.png',
               description: 'An electric green strip mountain bike',
               price: 3000,
             ),
-            ProductBox(
-              name: 'Mountril Bikey V3',
+            const ProductBox(
+              name: 'Mountril Bikey V4',
               image: '4.png',
               description: 'An electric green strip mountain bike',
               price: 3200,
             ),
-            ProductBox(
-              name: 'Mountril Bikey V3',
+            const ProductBox(
+              name: 'Mountril Bikey V5',
               image: '5.png',
               description: 'An electric green strip mountain bike',
               price: 3500,
