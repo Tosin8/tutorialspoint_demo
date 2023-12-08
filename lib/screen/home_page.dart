@@ -40,7 +40,38 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         body: ListView(
-          children: [],
+          children: [
+            ProductBox(
+              name: 'Mountril Bikey V',
+              image: '1.png',
+              description: 'An electric yellow strip mountain bike',
+              price: 3000,
+            ),
+            ProductBox(
+              name: 'Mountril Bikey V2',
+              image: '2.png',
+              description: 'An electric purple strip mountain bike',
+              price: 2500,
+            ),
+            ProductBox(
+              name: 'Mountril Bikey V3',
+              image: '3.png',
+              description: 'An electric green strip mountain bike',
+              price: 3000,
+            ),
+            ProductBox(
+              name: 'Mountril Bikey V3',
+              image: '4.png',
+              description: 'An electric green strip mountain bike',
+              price: 3200,
+            ),
+            ProductBox(
+              name: 'Mountril Bikey V3',
+              image: '5.png',
+              description: 'An electric green strip mountain bike',
+              price: 3500,
+            )
+          ],
         ),
         drawer: const Bikey_Drawer());
   }
