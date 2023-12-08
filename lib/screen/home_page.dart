@@ -40,6 +40,8 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         body: ListView(
+          shrinkWrap: true,
+          padding: EdgeInsets.fromLTRB(2, 10, 2, 10),
           children: [
             ProductBox(
               name: 'Mountril Bikey V',

@@ -16,7 +16,7 @@ class Bikey_Drawer extends StatelessWidget {
         height: 100,
         child: DrawerHeader(
           decoration: BoxDecoration(
-            color: Colors.green,
+            color: Colors.blueAccent,
           ),
           child: Row(
             children: [
@@ -235,8 +235,12 @@ class ProductBox extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(name, style: ProductMainText),
-                  const SizedBox(height: 10),
-                  Text(description, style: ProductSubText),
+                  const SizedBox(height: 5),
+                  Text(
+                    description,
+                    style: ProductSubText,
+                  ),
+                  const SizedBox(height: 5),
                   Text(
                     '\$$price',
                     style: ProductMainText,
@@ -264,7 +268,8 @@ class ProductBox extends StatelessWidget {
                         ),
                       ),
                     ),
-                  )
+                  ),
+                  SizedBox(height: 2),
                 ],
               ),
             ),
