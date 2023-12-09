@@ -7,7 +7,7 @@ class Product extends Model {
   final String image;
   int rating;
 
-  Product(
+  Product(json,
       {required this.name,
       required this.description,
       required this.price,
