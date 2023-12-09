@@ -11,5 +11,22 @@ class Product extends Model {
       {required this.name,
       required this.description,
       required this.price,
-      required this.image});
+      required this.image,
+      required this.rating});
+
+  factory Product.fromMap(Map<String, dynamic> json) {
+    return Product(
+      json['name'],
+      json['description'],
+      json['price'],
+      json['image'],
+      json['rating'],
+    );
+  }
+
+  void updateRating(int myRating) {
+    rating = myRating;
+
+    notifyListeners();
+  }
 }
